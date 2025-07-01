@@ -1,5 +1,47 @@
-# Vue 3 + Vite
+# 🌐 WebStudio — Creating the Future of Web Technologies
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A modern, responsive website built with a clean design and component-based architecture. Developed using **Vue 3**, **Tailwind CSS**, and **Vue Router**.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+---
+
+## 🚀 Features
+
+- Fully responsive design for all devices
+- Animated hero section with call-to-action
+- Navigation menu with mobile support
+- Sections: Home, About, Services, Portfolio, Blog, Contact
+- Dynamic navbar background on scroll
+- Clean and reusable components
+
+---
+
+## 🛠 Tech Stack
+
+- [Vue 3](https://vuejs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Vue Router](https://router.vuejs.org/)
+- [Vite](https://vitejs.dev/) — modern frontend tooling
+
+---
+📁 Project Structure
+bash
+Copy
+Edit
+src/
+│
+├── assets/              # Images and static content
+├── components/          # Shared components like Navbar, Footer, etc.
+├── pages/               # Page-level components (Home.vue, About.vue, etc.)
+├── router/              # Route configuration
+├── App.vue              # Root component
+├── main.js              # App entry point
+└── tailwind.config.js   # Tailwind CSS configuration
+
+✅ Roadmap
+Add contact form integration
+
+Integrate Google Maps on the contact page
+
+Connect to a headless CMS or API
+
+Add dark/light mode toggle
