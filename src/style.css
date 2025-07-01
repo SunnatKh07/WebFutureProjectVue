@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans bg-white text-secondary-800;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-secondary-900 hover:bg-secondary-800 text-white font-medium px-6 py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-100 hover:bg-secondary-200 text-secondary-800 font-medium px-6 py-3 rounded-lg transition-all duration-300 border border-secondary-200 hover:border-secondary-300;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-secondary-900 text-secondary-900 hover:bg-secondary-900 hover:text-white font-medium px-6 py-3 rounded-lg transition-all duration-300;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-secondary-100;
+  }
+  
+  .card-hover {
+    @apply transform hover:-translate-y-1 hover:scale-105;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 border border-secondary-200 rounded-lg focus:ring-2 focus:ring-secondary-500 focus:border-transparent transition-all duration-300 outline-none;
+  }
+  
+  .section-padding {
+    @apply py-16 lg:py-24;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-secondary-700 to-secondary-900 bg-clip-text text-transparent;
+  }
+  
+  .bg-gradient-custom {
+    @apply bg-gradient-to-br from-secondary-600 via-secondary-700 to-secondary-900;
+  }
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+
+.slide-fade-enter-active {
+  transition: all 0.3s ease;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.3s ease;
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}
